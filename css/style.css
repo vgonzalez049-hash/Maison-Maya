@@ -18,8 +18,8 @@ html {
 body {
   margin: 0;
   font-family: "Italiana", sans-serif;
-  color: var(--negro);
-  background: var(--rosa);
+  color: varrgb(71, 4, 21);
+  background: rgb(241, 184, 194);
   overflow-x: hidden;
 }
 
@@ -46,7 +46,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: var(--rosa); /* Cambia por el color de fondo de tu marca */
+  background-color: rgba(182, 246, 255, 0.866); /* Cambia por el color de fondo de tu marca */
   border-bottom: 1px solid #e5e7eb;
 }
 
