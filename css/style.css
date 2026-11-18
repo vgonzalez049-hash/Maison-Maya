@@ -63,11 +63,12 @@ img {
 .logoMaisonMaya {
   display: inline-flex;
   align-items: center;
-  flex-shrink: 0; /* Evita que el menú aplaste el logo */
+  flex-shrink: 0; 
+  /*Evita que el menú aplaste el logo */
 }
 
 .logoMaisonMaya img {
-  height: 60px;       /* Ajusta entre 40px y 60px según el diseño de tu logo */
+  height: 30px;       /* Ajusta entre 40px y 60px según el diseño de tu logo */
   width: auto;
   max-width: 200px;
   object-fit: contain;
