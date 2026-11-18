@@ -9,6 +9,7 @@
     --morado: #5b1296;
     --rosa: #E8A9BC;
     --vino: #722F45;
+    --azul: #9adfff;
 }
 
 html { 
@@ -46,7 +47,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(182, 246, 255, 0.866); /* Cambia por el color de fondo de tu marca */
+  background-color:  #89bbed; /* Cambia por el color de fondo de tu marca */
   border-bottom: 1px solid #e5e7eb;
 }
 
