@@ -7,9 +7,9 @@
 
 :root {
     --morado: #5b1296;
-    --rosa: #E8A9BC;
+    --rosa: #f6ceda;
     --vino: #722F45;
-    --azul: #9adfff;
+    --azul: #b0ebfe;
 }
 
 html { 
@@ -20,7 +20,7 @@ body {
   margin: 0;
   font-family: "Italiana", sans-serif;
   color: varrgb(71, 4, 21);
-  background: rgb(241, 184, 194);
+  background: #eaceffd0;
   overflow-x: hidden;
 }
 
@@ -47,7 +47,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color:  #89bbed; /* Cambia por el color de fondo de tu marca */
+  background-color: #d9bfff; /* Cambia por el color de fondo de tu marca */
   border-bottom: 1px solid #e5e7eb;
 }
 
@@ -104,7 +104,7 @@ img {
 
 
 .nav-Maison-Maya a:hover {
-  color: var(--morado); /* Color principal de  TU MARCA*/
+  color:  #49004e; /* Color principal de  TU MARCA*/
 }
 
 /* Botón de WhatsApp */
@@ -116,7 +116,7 @@ img {
   border: none;
   border-radius: 9999px;
   background-color: var(--rosa); /* Ajusta al color de tu marca */
-  color: var(--morado);
+  color:  #3b195b;
   font-weight: 600;
   cursor: pointer;
   transition: opacity 0.2s ease, transform 0.2s ease;
@@ -158,6 +158,253 @@ img {
 
 h1, h2, h3 { 
     font-family: "Dancing Script", serif; 
-    color: var(--negro); 
+    color: var(--morado); 
     margin: 0;
  }
+
+ .intro {
+  padding: clamp(48px, 8vh, 90px) var(--page-gutter) 38px;
+  text-align: center;
+}
+
+
+.intro-eyebrow,
+.contact-eyebrow {
+  margin-bottom: 18px;
+  color:  ar(--morado);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+
+.intro-title {
+  font-size: clamp(38px, 6vw, 78px);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -3px;
+  color: #82034d;
+  font-family: "Agrave Pro"
+  
+}
+
+
+.intro-title span {
+  color: #82034d;
+}
+
+
+.intro-description {
+  max-width: 520px;
+  margin: 20px auto 0;
+  color: #070606;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.gallery {
+  width: 100%;
+  padding: 0 var(--page-gutter);
+  display: grid;
+  /* El panel de video es un poco más ancho que las dos imágenes. */
+  grid-template-columns: 1.25fr 1fr 1fr;
+  gap: 12px;
+  align-items: stretch;
+}
+
+
+/* Cada tarjeta funciona como una ventana visual. */
+.media-card {
+  min-width: 0;
+  height: clamp(440px, 65vw, 690px);
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--color-panel);
+}
+
+
+/* Imagen o video ocupan todo el espacio de la tarjeta. */
+.media-card__media {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  /* Estado inicial: desaturado y un poco oscuro. */
+  filter: grayscale(100%) brightness(0.62) contrast(0.95);
+  transform: scale(1.015);
+  transition:
+    filter 700ms ease,
+    transform 1000ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+
+/* Capa gris/negra encima de la fotografía para crear el aspecto cinematográfico. */
+.media-card__shade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.04) 5%,
+    rgba(0, 0, 0, 0.12) 42%,
+    rgba(0, 0, 0, 0.78) 100%
+  );
+  opacity: 0.92;
+  transition: opacity 600ms ease;
+}
+
+
+/* Texto y enlaces se sitúan por encima de la capa oscura. */
+.media-card__content {
+  position: absolute;
+  z-index: 2;
+  right: 24px;
+  bottom: 30px;
+  left: 24px;
+  transition: transform 500ms ease;
+}
+
+
+.media-card__number {
+  margin-bottom: 14px;
+  color: #d0d0d0;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+}
+
+
+.media-card__title {
+  color: #ffffff;
+  font-size: clamp(21px, 2.2vw, 35px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -1px;
+}
+
+
+.media-card__link {
+  width: fit-content;
+  margin-top: 22px;
+  padding-bottom: 7px;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+  color: #ffffff;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  transition: gap 250ms ease, border-color 250ms ease;
+}
+
+
+.media-card__link:hover,
+.media-card__link:focus-visible {
+  gap: 25px;
+  border-color: #ffffff;
+}
+
+
+.media-card__link span {
+  font-size: 16px;
+  line-height: 0.8;
+}
+
+
+/* ---------------------------------------------------------
+  EFECTO HOVER: RECUPERAR COLOR Y ACERCAR LA IMAGEN
+   --------------------------------------------------------- */
+.media-card:hover .media-card__media,
+.media-card:focus-within .media-card__media,
+.media-card.is-playing .media-card__media {
+  filter: grayscale(0%) brightness(1) contrast(1);
+  transform: scale(1.07);
+}
+
+
+.media-card:hover .media-card__shade,
+.media-card:focus-within .media-card__shade,
+.media-card.is-playing .media-card__shade {
+  opacity: 0.72;
+}
+
+
+.media-card:hover .media-card__content,
+.media-card:focus-within .media-card__content {
+  transform: translateY(-5px);
+}
+
+
+/* =========================================================
+   BOTÓN DE REPRODUCCIÓN DEL VIDEO
+   ========================================================= */
+.video-toggle {
+  position: absolute;
+  z-index: 4;
+  top: 20px;
+  right: 20px;
+  min-height: 38px;
+  padding: 0 13px;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+  display: none;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: background 200ms ease;
+}
+
+
+.video-toggle:hover,
+.video-toggle:focus-visible {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+
+.video-toggle__icon {
+  font-size: 10px;
+}
+
+
+.video-toggle__text {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+/* En equipos que no tienen hover, el botón se muestra siempre. */
+@media (hover: none), (pointer: coarse) {
+  .video-toggle {
+    display: inline-flex;
+  }
+}
+
+
+/* También se muestra al navegar con teclado. */
+.media-card--video:focus-within .video-toggle {
+  display: inline-flex;
+}
+
+
+/*footer*/
+
+
+
+ .site-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+  }
+

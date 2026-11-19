@@ -57,31 +57,107 @@
 <main>
 
 <!--======SECCIÓN DEL HERO========-->
-  <section id="inicio" class="hero">
-      <div class="container hero-inicio">
-        <div class="hero-text">
-          <p class="eyebrow">Cada decisión</p>
-          <h1>Maison-Maya</h1>
-          <p class="lead">Promociona tus productos, recibe pedidos y haz que tus clientes te encuentren desde cualquier lugar.</p>
-
-
-          <div class="hero-actions">
-            <a href="#productos" class="btn primary">Ver productos</a>
-            <button type="button" class="btn outline" onclick="openWhatsApp('Hola, vi su página y me gustaría conocer sus regalos personalizados.')">Comprar por WhatsApp</button>
-          </div>
-
-
-          <p class="trust"><i data-lucide="heart"></i> Más de 200 detalles entregados</p>
-        </div>
-
-
-        <div class="hero-imagen">
-          <img src="XXX" alt="XXXXX">
-          <span class="tag tag-love">Hecho con cariño</span>
-          <span class="tag tag-custom">Pedidos personalizados</span>
-        </div>
-      </div>
+ <section class="intro" aria-labelledby="intro-title">
+      <p class="intro-eyebrow">BIENVENIDOS A MAISON MAYA</p>
+      <h1 class="intro-title" id="intro-title">BELLEZA QUE<br><span>TRASCIENDE</span></h1>
+      <p class="intro-description">Descubre una forma auténtica de conectar con tu belleza.</p>
     </section>
+
+
+    <!-- Galería principal: un video y dos imágenes -->
+    <section class="gallery" id="galeria" aria-label="Galería principal">
+
+
+      <!-- VIDEO -->
+      <article class="media-card media-cardvideo" data-video-card>
+        <!-- Sustituye el archivo de video por el tuyo. Se recomienda MP4  -->
+        <video
+          class="media-card media-card-video"
+          data-hover-video
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="img/hero 1.mp4"
+          aria-label="Video de presentación">
+          <source src="img/hero 1.mp4" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+        </video>
+
+
+        <!-- Capa oscura que permite leer el texto sobre el video -->
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <!-- Texto que aparece sobre el panel -->
+        <div class="media-card__content">
+          <p class="media-card__number"> CONOCE MAISON MAYA</p>
+          <h2 class="media-card__title">BELLEZA CON<br>PROPÓSITO</h2>
+          <a class="media-card__link" href="#contacto">Descubrir <span aria-hidden="true">↗</span></a>
+        </div>
+
+
+        <!-- Control visible en pantallas táctiles y accesible con teclado -->
+        <button class="video-toggle" type="button" data-video-toggle aria-label="Reproducir video" aria-pressed="false">
+          <span class="video-toggle__icon" data-toggle-icon aria-hidden="true">▶</span>
+          <span class="video-toggle__text" data-toggle-text>Reproducir video</span>
+        </button>
+      </article>
+
+
+      <!--  IMAGEN 1-->
+      <article class="media-card">
+        <!-- Reemplaza trayectoria.jpg por el nombre de tu fotografía. -->
+        <img
+          class="media-card__media media-card__image"
+          src="img/maquillaje 1.jpg"
+          alt="Foto de productos de maquillaje de lujo"
+          loading="lazy">
+
+
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <div class="media-card__content">
+          <p class="media-card__number">Productos</p>
+          <h2 class="media-card__title">BRILLO Y<br>PERFECCIÓN</h2>
+          <a class="media-card__link" href="#contacto">Conocer más <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+
+      <!--  IMAGEN 2-->
+      <article class="media-card">
+        <!-- Reemplaza proyectos.jpg por el nombre de tu fotografía. -->
+        <img
+          class="media-card__media media-card__image"
+          src="img/hero 2.mp4"
+          alt="Fotografía que representa mis proyectos"
+          loading="lazy">
+
+
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <div class="media-card__content">
+          <p class="media-card__number">03 / TENDENCIAS</p>
+          <h2 class="media-card__title">CREA TU <br>PROPIO ESTILO</h2>
+          <a class="media-card__link" href="#contacto">Ver proyectos <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+
+    </section>
+
+
+</main>
+         
+<!--footer Ó PIE DE PÁGINA-->
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <p>© <span id="current-year"></span> MAISON MAYA. Todos los derechos reservados.</p>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer>
 
 <p>Cada Oportunidad inicia con una decisión</p>
 <h1>Maison-Maya</h1>
