@@ -18,9 +18,9 @@ html {
 
 body {
   margin: 0;
-  font-family: "Italiana", sans-serif;
-  color: varrgb(71, 4, 21);
-  background: #eaceffd0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #2C0F2E;
+  background: #E3DDE9;
   overflow-x: hidden;
 }
 
@@ -47,8 +47,8 @@ img {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #d9bfff; /* Cambia por el color de fondo de tu marca */
-  border-bottom: 1px solid #e5e7eb;
+  background-color:#E3DDE9; /* Cambia por el color de fondo de tu marca */
+  border-bottom: 1px solid #D1C7DC;
 }
 
 .header-inicio {
@@ -97,14 +97,14 @@ img {
 
 .nav-Maison-Maya a {
   text-decoration: none;
-  color: #1f2937;
+  color:#2C0F2E;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 
 .nav-Maison-Maya a:hover {
-  color:  #49004e; /* Color principal de  TU MARCA*/
+  color:  #926FD5; /* Color principal de  TU MARCA*/
 }
 
 /* Botón de WhatsApp */
@@ -115,8 +115,8 @@ img {
   padding: 0.65rem 1.25rem;
   border: none;
   border-radius: 9999px;
-  background-color: var(--rosa); /* Ajusta al color de tu marca */
-  color:  #3b195b;
+  background-color:#926FD5; /* Ajusta al color de tu marca */
+  color:  #FFFFFF;
   font-weight: 600;
   cursor: pointer;
   transition: opacity 0.2s ease, transform 0.2s ease;
@@ -157,8 +157,9 @@ img {
 }
 
 h1, h2, h3 { 
-    font-family: "Dancing Script", serif; 
-    color: var(--morado); 
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    color: #44053E; 
     margin: 0;
  }
 
@@ -171,20 +172,20 @@ h1, h2, h3 {
 .intro-eyebrow,
 .contact-eyebrow {
   margin-bottom: 18px;
-  color:  ar(--morado);
-  font-size: 20px;
+  color:  #151517;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 4px;
 }
 
 
 .intro-title {
-  font-size: clamp(38px, 6vw, 78px);
-  font-weight: 800;
-  line-height: 0.98;
+  font-size: clamp(38px, 5.8vw, 74px);
+  font-weight: 400;
+  line-height: 1.12;
   letter-spacing: -3px;
-  color: #82034d;
-  font-family: "Agrave Pro"
+  color: #44053E;
+  font-family: "Belleza", sans-serif;
   
 }
 
@@ -197,7 +198,7 @@ h1, h2, h3 {
 .intro-description {
   max-width: 520px;
   margin: 20px auto 0;
-  color: #070606;
+  color: #44053E;
   font-size: 12px;
   line-height: 1.8;
 }
@@ -220,7 +221,7 @@ h1, h2, h3 {
   position: relative;
   overflow: hidden;
   isolation: isolate;
-  background: var(--color-panel);
+  background: #44053E;
 }
 
 
@@ -250,7 +251,7 @@ h1, h2, h3 {
   pointer-events: none;
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.04) 5%,
+   rgba(0, 0, 0, 0.04) 5%,
     rgba(0, 0, 0, 0.12) 42%,
     rgba(0, 0, 0, 0.78) 100%
   );
@@ -272,7 +273,7 @@ h1, h2, h3 {
 
 .media-card__number {
   margin-bottom: 14px;
-  color: #d0d0d0;
+  color: #E3DDE9;
   font-size: 9px;
   font-weight: 600;
   letter-spacing: 2.5px;
@@ -308,7 +309,7 @@ h1, h2, h3 {
 .media-card__link:hover,
 .media-card__link:focus-visible {
   gap: 25px;
-  border-color: #ffffff;
+  border-color: #E3DDE9;
 }
 
 
@@ -354,7 +355,7 @@ h1, h2, h3 {
   padding: 0 13px;
   border: 1px solid rgba(255, 255, 255, 0.65);
   border-radius: 30px;
-  background: rgba(0, 0, 0, 0.35);
+background: rgba(0, 0, 0, 0.35);
   color: #ffffff;
   display: none;
   align-items: center;
