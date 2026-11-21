@@ -172,7 +172,7 @@ h1, h2, h3 {
 .intro-eyebrow,
 .contact-eyebrow {
   margin-bottom: 18px;
-  color:  #151517;
+  color:  #82034d;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 4px;
@@ -198,7 +198,7 @@ h1, h2, h3 {
 .intro-description {
   max-width: 520px;
   margin: 20px auto 0;
-  color: #44053E;
+  color:#44053E;
   font-size: 12px;
   line-height: 1.8;
 }
@@ -273,7 +273,7 @@ h1, h2, h3 {
 
 .media-card__number {
   margin-bottom: 14px;
-  color: #E3DDE9;
+  color: #ffffff;
   font-size: 9px;
   font-weight: 600;
   letter-spacing: 2.5px;
@@ -473,7 +473,7 @@ background: rgba(0, 0, 0, 0.35);
     box-shadow: 0 10px 24px rgba(189,84,63,.22); 
 }
 .btn.primary:hover { 
-    background: var(--coral-dark); 
+    background: #82034d;
     transform: translateY(-2px);
 }
 
@@ -484,13 +484,13 @@ background: rgba(0, 0, 0, 0.35);
     border: 1px solid #E3DDE9; 
 }
 .btn.outline:hover { 
-    background: #fff1ec; 
+    background: #fdcbc9; 
     transform: translateY(-2px);
 }
 
 
 .btn.card { 
-    border: 1px solid #dface9; 
+    border: 1px solid #844f8f; 
     background: #fff7f3; 
     color: var(--coral-dark); 
     width: 100%; 
@@ -540,27 +540,39 @@ section-heading {
 .section-heading .eyebrow {
   display: inline-block;
   margin-bottom: 0.6rem;
-  color: var(--verde);
+  color: #3E0B3C;
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
 
+.section-heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
 
 .section-heading h2 {
   font-size: clamp(1.8rem, 4vw, 2.5rem);
   line-height: 1.15;
   margin: 0.25rem 0 0.75rem;
+  color:#82034d
 }
 
 
 .section-heading .lead {
   max-width: 520px;
   margin: 0 auto;
-  color: var(--verde);
+  color: #3E0B3C;
   font-size: 1.05rem;
   line-height: 1.6;
+}
+
+.products .section-heading {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto 2.5rem;
 }
 
 
@@ -588,7 +600,7 @@ section-heading {
   align-items: center;
   gap: 0.4rem;
   padding: 0.45rem 1.1rem;
-  border: 1px solid var(--verde);
+  border: 1px solid #3E0B3C;
   border-radius: 999px;
   font-size: 0.85rem;
   font-weight: 600;
@@ -597,8 +609,8 @@ section-heading {
 
 
 .site-footer a:hover {
-  background-color: var(--verde);
-  color: #ebd7ff;
+  background-color:#82034d ;
+  color: #FFFFFF;
   transform: translateY(-2px);
 }
 
