@@ -507,7 +507,7 @@ background: rgba(0, 0, 0, 0.35);
     color: #563716;
  }
 .btn.butter:hover { 
-    background: #c4cdff; 
+    background: #D1C7DC; 
 }
 
 
@@ -660,6 +660,47 @@ section-heading {
 }
 
 
+/* ---------- Contacto ---------- */
+
+.contact-panel{
+  display: grid;
+  gap: 2rem;
+  background:#FFFFFF;
+  border: 1px solid #82034d;
+  border-radius: 30px;
+  padding: 1.5rem;
+  color:#82034d
+}
+.contact-text .btn { 
+    margin-top: 1.8rem; 
+    width: 100%; 
+}
+.contact-info,
+.contact-card {
+  background: #FFFFFF;
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 14px #560382;
+}
+.contact-info ul { display: flex; flex-direction: column; gap: 1.2rem; }
+.contact-info li { display: flex; align-items: center; gap: .75rem; }
+.contact-info i {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+.contact-info a { font-weight: 700; color:#2C0F2E; text-decoration: underline; text-decoration-color: #2C0F2E; }
+
+
+@media (min-width: 900px) {
+  .contact-panel { grid-template-columns: 1.1fr .9fr; padding: 2.5rem; }
+  .contact-text .btn { width: auto; }
+}
 
 
 /*footer*/
@@ -669,9 +710,9 @@ section-heading {
   align-items: center;
   justify-content: center;
   gap: 0.85rem;
-  padding: 2.5rem var(--page-gutter);
+  padding: 2.5rem #E4DCE7;
   text-align: center;
-  background: #E3DDE9;
+  background: #E4DCE7;
   color: var(--verde);
 }
 
